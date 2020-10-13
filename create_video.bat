@@ -1,0 +1,1 @@
+ffmpeg -r 60 -i render/frame%%05d.png -vf scale=-2:1080 -an -vcodec libx264 -pix_fmt yuv420p -profile:v main -preset slower -crf 18 -strict -2 -movflags +faststart leds.mp4
